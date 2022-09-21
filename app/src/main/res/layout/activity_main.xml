@@ -6,13 +6,127 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/rotateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/rotate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="80dp"/>
+
+    <ImageView
+        android:id="@+id/imageButtonNeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonChest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mussel_man_front_neck_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonChest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonAbs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mussel_man_front_chest_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonAbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonChest"
+        app:srcCompat="@drawable/mussel_man_front_abs_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonLeftShoulder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonChest"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonNeck"
+        app:srcCompat="@drawable/mussel_man_front_left_shoulder_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonLeftBicep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonChest"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonLeftShoulder"
+        app:srcCompat="@drawable/mussel_man_front_left_bicep_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonLeftForearm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonChest"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonLeftBicep"
+        app:srcCompat="@drawable/mussel_man_front_left_forearm_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonRightShoulder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imageButtonChest"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonNeck"
+        app:srcCompat="@drawable/mussel_man_front_right_shoulder_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonRightBicep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imageButtonChest"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonRightShoulder"
+        app:srcCompat="@drawable/mussel_man_front_right_bicep_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonRightForearm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imageButtonChest"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonRightBicep"
+        app:srcCompat="@drawable/mussel_man_front_right_forearm_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonLegs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonAbs"
+        app:srcCompat="@drawable/mussel_man_front_legs_35" />
+
+    <ImageView
+        android:id="@+id/imageButtonCalves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonLegs"
+        app:srcCompat="@drawable/mussel_man_front_calves_35" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
