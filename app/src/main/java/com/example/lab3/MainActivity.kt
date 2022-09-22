@@ -1,10 +1,9 @@
 package com.example.lab3
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.lab3.databinding.ActivityMainBinding
 import com.example.lab3.model.Muscle
 
@@ -23,60 +22,74 @@ class MainActivity : AppCompatActivity() {
             rotateDiagram()
         }
         binding.imageViewNeck.setOnClickListener {
-            Toast.makeText(this, "TRAPS", Toast.LENGTH_SHORT).show()
+//            viewModel.setMuscle(Muscle.TRAPS)
+            Toast.makeText(this, Muscle.TRAPS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewChest.setOnClickListener() {
             if (rotation == FRONT) {
-                Toast.makeText(this, "CHEST", Toast.LENGTH_SHORT).show()
                 //Go to new activity with CHEST as enum
                 val intent = Intent(this, RecyclerActivity::class.java).apply {
                     putExtra("Muscle", Muscle.CHEST)
                 }
                 startActivity(intent)
-            }
-            else {
-                Toast.makeText(this, "BACK", Toast.LENGTH_SHORT).show()
+            } else {
                 //Go to new activity with Back as end
+//                viewModel.setMuscle(Muscle.BACK)
+                Toast.makeText(this, Muscle.BACK.toString(), Toast.LENGTH_SHORT).show()
             }
         }
         binding.imageViewAbs.setOnClickListener() {
-            if (rotation == FRONT)
-                Toast.makeText(this, "ABS", Toast.LENGTH_SHORT).show()
+            if (rotation == FRONT) {
+//                viewModel.setMuscle(Muscle.ABS)
+                Toast.makeText(this, Muscle.ABS.toString(), Toast.LENGTH_SHORT).show()
+            }
             else
-                Toast.makeText(this, "BACK", Toast.LENGTH_SHORT).show()
+//                viewModel.setMuscle(Muscle.BACK)
+                Toast.makeText(this, Muscle.BACK.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewLeftShoulder.setOnClickListener() {
-            Toast.makeText(this, "DELTS", Toast.LENGTH_SHORT).show()
+//            viewModel.setMuscle(Muscle.DELTS)
+            Toast.makeText(this, Muscle.DELTS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewRightShoulder.setOnClickListener() {
-            Toast.makeText(this, "DELTS", Toast.LENGTH_SHORT).show()
+//            viewModel.setMuscle(Muscle.DELTS)
+            Toast.makeText(this, Muscle.DELTS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewLeftBicep.setOnClickListener() {
             if (rotation == FRONT)
-                Toast.makeText(this, "BICEPS", Toast.LENGTH_SHORT).show()
+//                viewModel.setMuscle(Muscle.BICEPS)
+                Toast.makeText(this, Muscle.BICEPS.toString(), Toast.LENGTH_SHORT).show()
             else
-                Toast.makeText(this, "TRICEPS", Toast.LENGTH_SHORT).show()
+//                viewModel.setMuscle(Muscle.TRICEPS)
+                Toast.makeText(this, Muscle.TRICEPS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewRightBicep.setOnClickListener() {
             if (rotation == FRONT)
-                Toast.makeText(this, "BICEPS", Toast.LENGTH_SHORT).show()
+//                viewModel.setMuscle(Muscle.BICEPS)
+                Toast.makeText(this, Muscle.BICEPS.toString(), Toast.LENGTH_SHORT).show()
             else
-                Toast.makeText(this, "TRICEPS", Toast.LENGTH_SHORT).show()
+//                viewModel.setMuscle(Muscle.TRICEPS)
+                Toast.makeText(this, Muscle.TRICEPS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewLeftForearm.setOnClickListener() {
-            Toast.makeText(this, "FOREARMS", Toast.LENGTH_SHORT).show()
+//            viewModel.setMuscle(Muscle.FOREARMS)
+            Toast.makeText(this, Muscle.FOREARMS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewRightForearm.setOnClickListener() {
-            Toast.makeText(this, "FOREARMS", Toast.LENGTH_SHORT).show()
+//            viewModel.setMuscle(Muscle.FOREARMS)
+            Toast.makeText(this, Muscle.FOREARMS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewLegs.setOnClickListener() {
             if (rotation == FRONT)
-                Toast.makeText(this, "QUADS", Toast.LENGTH_SHORT).show()
+//                viewModel.setMuscle(Muscle.QUADS)
+                Toast.makeText(this, Muscle.QUADS.toString(), Toast.LENGTH_SHORT).show()
             else
-                Toast.makeText(this, "GLUTES_HAMS", Toast.LENGTH_SHORT).show()
+//                viewModel.setMuscle(Muscle.GLUTES_HAMS)
+                Toast.makeText(this, Muscle.GLUTES_HAMS.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewCalves.setOnClickListener() {
-            Toast.makeText(this, "CALVES", Toast.LENGTH_SHORT).show()
+//            viewModel.setMuscle(Muscle.CALVES)
+            Toast.makeText(this, Muscle.CALVES.toString(), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -109,7 +122,6 @@ class MainActivity : AppCompatActivity() {
             rotation = FRONT
         }
     }
-
 
 
 }

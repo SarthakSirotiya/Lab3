@@ -44,4 +44,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17' // MANUEL's first push
+    // dependencies for ViewModel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.fragment:fragment-ktx:1.5.3'
 }

@@ -1,4 +1,3 @@
-
 package com.example.lab3.model
 
 enum class Muscle {
