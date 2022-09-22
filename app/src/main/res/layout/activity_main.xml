@@ -17,115 +17,115 @@
         android:layout_marginBottom="80dp"/>
 
     <ImageView
-        android:id="@+id/imageButtonNeck"
+        android:id="@+id/imageViewNeck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonChest"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewChest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mussel_man_front_neck_35" />
 
     <ImageView
-        android:id="@+id/imageButtonChest"
+        android:id="@+id/imageViewChest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonAbs"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAbs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/mussel_man_front_chest_35" />
 
     <ImageView
-        android:id="@+id/imageButtonAbs"
+        android:id="@+id/imageViewAbs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonChest"
+        app:layout_constraintTop_toBottomOf="@id/imageViewChest"
         app:srcCompat="@drawable/mussel_man_front_abs_35" />
 
     <ImageView
-        android:id="@+id/imageButtonLeftShoulder"
+        android:id="@+id/imageViewLeftShoulder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toStartOf="@id/imageButtonChest"
+        app:layout_constraintEnd_toStartOf="@id/imageViewChest"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonNeck"
+        app:layout_constraintTop_toBottomOf="@id/imageViewNeck"
         app:srcCompat="@drawable/mussel_man_front_left_shoulder_35" />
 
     <ImageView
-        android:id="@+id/imageButtonLeftBicep"
+        android:id="@+id/imageViewLeftBicep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/imageButtonChest"
+        app:layout_constraintEnd_toStartOf="@id/imageViewChest"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonLeftShoulder"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLeftShoulder"
         app:srcCompat="@drawable/mussel_man_front_left_bicep_35" />
 
     <ImageView
-        android:id="@+id/imageButtonLeftForearm"
+        android:id="@+id/imageViewLeftForearm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/imageButtonChest"
+        app:layout_constraintEnd_toStartOf="@id/imageViewChest"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonLeftBicep"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLeftBicep"
         app:srcCompat="@drawable/mussel_man_front_left_forearm_35" />
 
     <ImageView
-        android:id="@+id/imageButtonRightShoulder"
+        android:id="@+id/imageViewRightShoulder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/imageButtonChest"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonNeck"
+        app:layout_constraintStart_toEndOf="@id/imageViewChest"
+        app:layout_constraintTop_toBottomOf="@id/imageViewNeck"
         app:srcCompat="@drawable/mussel_man_front_right_shoulder_35" />
 
     <ImageView
-        android:id="@+id/imageButtonRightBicep"
+        android:id="@+id/imageViewRightBicep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/imageButtonChest"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonRightShoulder"
+        app:layout_constraintStart_toEndOf="@id/imageViewChest"
+        app:layout_constraintTop_toBottomOf="@id/imageViewRightShoulder"
         app:srcCompat="@drawable/mussel_man_front_right_bicep_35" />
 
     <ImageView
-        android:id="@+id/imageButtonRightForearm"
+        android:id="@+id/imageViewRightForearm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/imageButtonChest"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonRightBicep"
+        app:layout_constraintStart_toEndOf="@id/imageViewChest"
+        app:layout_constraintTop_toBottomOf="@id/imageViewRightBicep"
         app:srcCompat="@drawable/mussel_man_front_right_forearm_35" />
 
     <ImageView
-        android:id="@+id/imageButtonLegs"
+        android:id="@+id/imageViewLegs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonAbs"
+        app:layout_constraintTop_toBottomOf="@id/imageViewAbs"
         app:srcCompat="@drawable/mussel_man_front_legs_35" />
 
     <ImageView
-        android:id="@+id/imageButtonCalves"
+        android:id="@+id/imageViewCalves"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonLegs"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLegs"
         app:srcCompat="@drawable/mussel_man_front_calves_35" />
 
 
