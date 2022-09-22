@@ -53,12 +53,26 @@ object DataSource {
         Muscle.CHEST
     )
 
-//    val delt_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.DELTS
-//    )
+    val delt_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.shoulder_standing_overhead_press,
+                "Standing Overhead Press",
+                "Targets Anterior Deltoid"
+            ),
+            Exercise (
+                R.drawable.shoulder_dumbbell_lateral_raise,
+                "Dumbell Lateral Raise",
+                "Targets Lateral Deltoid"
+            ),
+            Exercise (
+                R.drawable.shoulder_supine_face_pulls,
+                "Supine Face Pulls",
+                "Targets Posterior Deltoid"
+            )
+        ),
+        Muscle.DELTS
+    )
 
     val bicep_exercises = Muscle_Exercises (
         listOf(
@@ -93,12 +107,26 @@ object DataSource {
 //        Muscle.TRICEPS
 //    )
 
-//    val forearm_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.FOREARMS
-//    )
+    val forearm_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.forearm_standing_wrist_curls,
+                "Standing Wrist Curl",
+                "Targets Flexors"
+            ),
+            Exercise (
+                R.drawable.forearm_standing_wrist_extensions,
+                "Standing Wrist Extension",
+                "Targets Extensors"
+            ),
+            Exercise (
+                R.drawable.forearm_wrist_rollers,
+                "Wrist Rollers",
+                "Targets Metabolic Stress"
+            )
+        ),
+        Muscle.FOREARMS
+    )
 
 //    val ab_exercises = Muscle_Exercises (
 //        listOf(
