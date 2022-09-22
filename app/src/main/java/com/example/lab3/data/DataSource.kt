@@ -60,12 +60,31 @@ object DataSource {
 //        Muscle.DELTS
 //    )
 
-//    val bicep_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.BICEPS
-//    )
+    val bicep_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.bicep_incline_dumbell_curl,
+                "Incline Dumbell Curl",
+                "Targets Long Head"
+            ),
+            Exercise (
+                R.drawable.bicep_concentration_curl,
+                "Concentration Curl",
+                "Targets Short Head"
+            ),
+            Exercise (
+                R.drawable.bicep_reverse_ez_bar_curl,
+                "Reverse Curl",
+                "Targets Brachialis"
+            ),
+            Exercise (
+                R.drawable.bicep_chin_up,
+                "Chin-Up",
+                "Targets Type II Muscles"
+            )
+        ),
+        Muscle.BICEPS
+    )
 
 //    val tricep_exercises = Muscle_Exercises (
 //        listOf(
