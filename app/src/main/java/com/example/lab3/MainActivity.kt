@@ -1,9 +1,12 @@
 package com.example.lab3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.lab3.databinding.ActivityMainBinding
+import com.example.lab3.model.Muscle
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,10 +26,18 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "TRAPS", Toast.LENGTH_SHORT).show()
         }
         binding.imageViewChest.setOnClickListener() {
-            if (rotation == FRONT)
+            if (rotation == FRONT) {
                 Toast.makeText(this, "CHEST", Toast.LENGTH_SHORT).show()
-            else
+                //Go to new activity with CHEST as enum
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.CHEST)
+                }
+                startActivity(intent)
+            }
+            else {
                 Toast.makeText(this, "BACK", Toast.LENGTH_SHORT).show()
+                //Go to new activity with Back as end
+            }
         }
         binding.imageViewAbs.setOnClickListener() {
             if (rotation == FRONT)
@@ -98,5 +109,7 @@ class MainActivity : AppCompatActivity() {
             rotation = FRONT
         }
     }
+
+
 
 }
