@@ -149,12 +149,26 @@ object DataSource {
 //        Muscle.ABS
 //    )
 
-//    val leg_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.LEGS
-//    )
+    val leg_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.legs_barbell_squat,
+                "Barbell Squat",
+                "Targets Quads"
+            ),
+            Exercise (
+                R.drawable.legs_romanian_deadlift,
+                "Romanian Deadlift",
+                "Targets Glutes n' Hams"
+            ),
+            Exercise (
+                R.drawable.legs_bulgarian_split_squat,
+                "Bulgarian Split Squat",
+                "Targets Quads, Glutes, n' Hams"
+            )
+        ),
+        Muscle.LEGS
+    )
 
 //    val calf_exercises = Muscle_Exercises (
 //        listOf(
