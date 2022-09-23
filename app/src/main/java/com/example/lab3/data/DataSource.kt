@@ -100,12 +100,26 @@ object DataSource {
         Muscle.BICEPS
     )
 
-//    val tricep_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.TRICEPS
-//    )
+    val tricep_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.tricep_incline_dumbell_kickback,
+                "Incline Dumbell Kickback",
+                "Targets Long Head"
+            ),
+            Exercise (
+                R.drawable.tricep_incline_dumbell_overhead_extension,
+                "Incline Dumbell Overhead Extension",
+                "Targets Long Head"
+            ),
+            Exercise (
+                R.drawable.tricep_bar_pushdown,
+                "Bar Pushdown",
+                "Targets Lateral Head"
+            )
+        ),
+        Muscle.TRICEPS
+    )
 
     val forearm_exercises = Muscle_Exercises (
         listOf(
