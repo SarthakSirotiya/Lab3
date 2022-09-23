@@ -149,18 +149,11 @@ object DataSource {
 //        Muscle.ABS
 //    )
 
-//    val quad_exercises = Muscle_Exercises (
+//    val leg_exercises = Muscle_Exercises (
 //        listOf(
 //            Exercise ()
 //        ),
-//        Muscle.QUADS
-//    )
-
-//    val glute_ham_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.GLUTES_HAMS
+//        Muscle.LEGS
 //    )
 
 //    val calf_exercises = Muscle_Exercises (

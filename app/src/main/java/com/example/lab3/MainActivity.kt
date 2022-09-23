@@ -110,13 +110,13 @@ class MainActivity : AppCompatActivity() {
         binding.imageViewLegs.setOnClickListener() {
             if (rotation == FRONT) {
                 val intent = Intent(this, RecyclerActivity::class.java).apply {
-                    putExtra("Muscle", Muscle.QUADS)
+                    putExtra("Muscle", Muscle.LEGS)
                 }
                 startActivity(intent)
             }
             else {
                 val intent = Intent(this, RecyclerActivity::class.java).apply {
-                    putExtra("Muscle", Muscle.GLUTES_HAMS)
+                    putExtra("Muscle", Muscle.LEGS)
                 }
                 startActivity(intent)
             }
