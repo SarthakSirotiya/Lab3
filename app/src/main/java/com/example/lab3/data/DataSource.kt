@@ -25,12 +25,62 @@ import com.example.lab3.model.Muscle_Exercises
  */
 object DataSource {
 
-//    val trap_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.TRAPS
-//    )
+    val trap_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.trap_above_the_knee_rack_pulls,
+                "Above The Knee Rack Pulls",
+                "Targets Upper Traps"
+            ),
+            Exercise (
+                R.drawable.trap_barbell_shrug,
+                "Barbell Shrug",
+                "Targets Upper Traps"
+            ),
+            Exercise (
+                R.drawable.trap_prone_reverse_fly,
+                "Prone Reverse Flys",
+                "Targets Mid Traps",
+            ),
+            Exercise (
+                R.drawable.trap_prone_y_s,
+                "Prone Y's",
+                "Emphasizes Lower Traps"
+            )
+        ),
+        Muscle.TRAPS
+    )
+
+    val back_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.back_deadlift,
+                "Deadlift",
+                "Targets Full Back"
+            ),
+            Exercise (
+                R.drawable.back_pull_up,
+                "Pull-Up",
+                "Targets Teres Minor and Infraspinatus"
+            ),
+            Exercise (
+                R.drawable.back_chest_supported_rows,
+                "Chest Supported Rows",
+                "Traps and Rhomboids"
+            ),
+            Exercise(
+                R.drawable.back_lat_pull_down,
+                "Lat Pull-Down",
+                "Targets Lats"
+            ),
+            Exercise (
+                R.drawable.back_scapular_pull_up,
+                "Scapular Pull-Up",
+                "Targets Lower Traps"
+            )
+        ),
+        Muscle.BACK
+    )
 
     val chest_exercises = Muscle_Exercises (
         listOf(
@@ -142,12 +192,26 @@ object DataSource {
         Muscle.FOREARMS
     )
 
-//    val ab_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.ABS
-//    )
+    val ab_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.abs_plank,
+                "Plank",
+                "Targets Hip Flexors and Serratus Anterior"
+                    ),
+            Exercise(
+                R.drawable.abs_candle_race,
+                "Candle Race",
+                "Targets Lower Abs"
+            ),
+            Exercise(
+                R.drawable.abs_v_up,
+                "V-Up",
+                "Targets Full Abs and Hip Flexors"
+            )
+        ),
+        Muscle.ABS
+    )
 
 //    val quad_exercises = Muscle_Exercises (
 //        listOf(
