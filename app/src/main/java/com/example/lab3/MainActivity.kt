@@ -22,10 +22,12 @@ class MainActivity : AppCompatActivity() {
             rotateDiagram()
         }
         binding.imageViewNeck.setOnClickListener {
-//            viewModel.setMuscle(Muscle.TRAPS)
-            Toast.makeText(this, Muscle.TRAPS.toString(), Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, RecyclerActivity::class.java).apply {
+                putExtra("Muscle", Muscle.TRAPS)
+            }
+            startActivity(intent)
         }
-        binding.imageViewChest.setOnClickListener() {
+        binding.imageViewChest.setOnClickListener {
             if (rotation == FRONT) {
                 //Go to new activity with CHEST as enum
                 val intent = Intent(this, RecyclerActivity::class.java).apply {
@@ -34,62 +36,96 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             } else {
                 //Go to new activity with Back as end
-//                viewModel.setMuscle(Muscle.BACK)
-                Toast.makeText(this, Muscle.BACK.toString(), Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.BACK)
+                }
+                startActivity(intent)
             }
         }
         binding.imageViewAbs.setOnClickListener() {
             if (rotation == FRONT) {
-//                viewModel.setMuscle(Muscle.ABS)
-                Toast.makeText(this, Muscle.ABS.toString(), Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.ABS)
+                }
+                startActivity(intent)
+            } else {
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.BACK)
+                }
+                startActivity(intent)
             }
-            else
-//                viewModel.setMuscle(Muscle.BACK)
-                Toast.makeText(this, Muscle.BACK.toString(), Toast.LENGTH_SHORT).show()
         }
         binding.imageViewLeftShoulder.setOnClickListener() {
-//            viewModel.setMuscle(Muscle.DELTS)
-            Toast.makeText(this, Muscle.DELTS.toString(), Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, RecyclerActivity::class.java).apply {
+                putExtra("Muscle", Muscle.DELTS)
+            }
+            startActivity(intent)
         }
         binding.imageViewRightShoulder.setOnClickListener() {
-//            viewModel.setMuscle(Muscle.DELTS)
-            Toast.makeText(this, Muscle.DELTS.toString(), Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, RecyclerActivity::class.java).apply {
+                putExtra("Muscle", Muscle.DELTS)
+            }
+            startActivity(intent)
         }
         binding.imageViewLeftBicep.setOnClickListener() {
-            if (rotation == FRONT)
-//                viewModel.setMuscle(Muscle.BICEPS)
-                Toast.makeText(this, Muscle.BICEPS.toString(), Toast.LENGTH_SHORT).show()
-            else
-//                viewModel.setMuscle(Muscle.TRICEPS)
-                Toast.makeText(this, Muscle.TRICEPS.toString(), Toast.LENGTH_SHORT).show()
+            if (rotation == FRONT) {
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.BICEPS)
+                }
+                startActivity(intent)
+            }
+            else {
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.TRICEPS)
+                }
+                startActivity(intent)
+            }
         }
         binding.imageViewRightBicep.setOnClickListener() {
-            if (rotation == FRONT)
-//                viewModel.setMuscle(Muscle.BICEPS)
-                Toast.makeText(this, Muscle.BICEPS.toString(), Toast.LENGTH_SHORT).show()
-            else
-//                viewModel.setMuscle(Muscle.TRICEPS)
-                Toast.makeText(this, Muscle.TRICEPS.toString(), Toast.LENGTH_SHORT).show()
+            if (rotation == FRONT) {
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.BICEPS)
+                }
+                startActivity(intent)
+            }
+            else {
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.TRICEPS)
+                }
+                startActivity(intent)
+            }
         }
         binding.imageViewLeftForearm.setOnClickListener() {
-//            viewModel.setMuscle(Muscle.FOREARMS)
-            Toast.makeText(this, Muscle.FOREARMS.toString(), Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, RecyclerActivity::class.java).apply {
+                putExtra("Muscle", Muscle.FOREARMS)
+            }
+            startActivity(intent)
         }
         binding.imageViewRightForearm.setOnClickListener() {
-//            viewModel.setMuscle(Muscle.FOREARMS)
-            Toast.makeText(this, Muscle.FOREARMS.toString(), Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, RecyclerActivity::class.java).apply {
+                putExtra("Muscle", Muscle.FOREARMS)
+            }
+            startActivity(intent)
         }
         binding.imageViewLegs.setOnClickListener() {
-            if (rotation == FRONT)
-//                viewModel.setMuscle(Muscle.QUADS)
-                Toast.makeText(this, Muscle.QUADS.toString(), Toast.LENGTH_SHORT).show()
-            else
-//                viewModel.setMuscle(Muscle.GLUTES_HAMS)
-                Toast.makeText(this, Muscle.GLUTES_HAMS.toString(), Toast.LENGTH_SHORT).show()
+            if (rotation == FRONT) {
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.QUADS)
+                }
+                startActivity(intent)
+            }
+            else {
+                val intent = Intent(this, RecyclerActivity::class.java).apply {
+                    putExtra("Muscle", Muscle.GLUTES_HAMS)
+                }
+                startActivity(intent)
+            }
         }
         binding.imageViewCalves.setOnClickListener() {
-//            viewModel.setMuscle(Muscle.CALVES)
-            Toast.makeText(this, Muscle.CALVES.toString(), Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, RecyclerActivity::class.java).apply {
+                putExtra("Muscle", Muscle.CALVES)
+            }
+            startActivity(intent)
         }
     }
 
