@@ -170,11 +170,20 @@ object DataSource {
         Muscle.LEGS
     )
 
-//    val calf_exercises = Muscle_Exercises (
-//        listOf(
-//            Exercise ()
-//        ),
-//        Muscle.CALVES
-//    )
+    val calf_exercises = Muscle_Exercises (
+        listOf(
+            Exercise (
+                R.drawable.calves_standing_calf_raise,
+                "Standing Calf Raise",
+                "Targets Gastrocnemius"
+            ),
+            Exercise (
+                R.drawable.calves_tibialis_raise,
+                "Tibialis Raise",
+                "Targets Tibialis Anterior"
+            )
+        ),
+        Muscle.CALVES
+    )
 
 }
