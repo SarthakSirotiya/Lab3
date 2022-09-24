@@ -17,6 +17,6 @@ class RecyclerActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textView_1)
         textView.text = intent.getSerializableExtra("Muscle").toString()
-
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }
