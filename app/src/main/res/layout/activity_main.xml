@@ -32,7 +32,7 @@
         android:id="@+id/edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Type in a motivational quote!"
+        android:hint="Type in a motivational quote!"
         app:layout_constraintBottom_toTopOf="@id/imageViewNeck"
         app:layout_constraintStart_toStartOf="parent" />
 
