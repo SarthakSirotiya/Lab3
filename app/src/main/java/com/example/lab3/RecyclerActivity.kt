@@ -39,14 +39,14 @@ class RecyclerActivity : AppCompatActivity() {
 
 
         var my_list = when (my_muscle) {
-            Muscle.TRAPS -> DataSource.chest_exercises // TODO TODO TODO
+            Muscle.TRAPS -> DataSource.trap_exercises
             Muscle.CHEST -> DataSource.chest_exercises
-            Muscle.BACK -> DataSource.chest_exercises // TODO TODO TODO
+            Muscle.BACK -> DataSource.back_exercises
             Muscle.DELTS -> DataSource.delt_exercises
             Muscle.BICEPS -> DataSource.bicep_exercises
             Muscle.TRICEPS -> DataSource.tricep_exercises
             Muscle.FOREARMS -> DataSource.forearm_exercises
-            Muscle.ABS -> DataSource.chest_exercises // TODO TODO
+            Muscle.ABS -> DataSource.ab_exercises
             Muscle.LEGS -> DataSource.leg_exercises
             Muscle.CALVES -> DataSource.calf_exercises
 
