@@ -2,7 +2,6 @@ package com.example.lab3
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.lab3.databinding.ActivityMainBinding
 import com.example.lab3.model.Muscle
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-        binding.imageViewAbs.setOnClickListener() {
+        binding.imageViewAbs.setOnClickListener {
             if (rotation == FRONT) {
                 val intent = Intent(this, RecyclerActivity::class.java).apply {
                     putExtra("Muscle", Muscle.ABS)
@@ -56,19 +55,19 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-        binding.imageViewLeftShoulder.setOnClickListener() {
+        binding.imageViewLeftShoulder.setOnClickListener {
             val intent = Intent(this, RecyclerActivity::class.java).apply {
                 putExtra("Muscle", Muscle.DELTS)
             }
             startActivity(intent)
         }
-        binding.imageViewRightShoulder.setOnClickListener() {
+        binding.imageViewRightShoulder.setOnClickListener {
             val intent = Intent(this, RecyclerActivity::class.java).apply {
                 putExtra("Muscle", Muscle.DELTS)
             }
             startActivity(intent)
         }
-        binding.imageViewLeftBicep.setOnClickListener() {
+        binding.imageViewLeftBicep.setOnClickListener {
             if (rotation == FRONT) {
                 val intent = Intent(this, RecyclerActivity::class.java).apply {
                     putExtra("Muscle", Muscle.BICEPS)
@@ -82,7 +81,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-        binding.imageViewRightBicep.setOnClickListener() {
+        binding.imageViewRightBicep.setOnClickListener {
             if (rotation == FRONT) {
                 val intent = Intent(this, RecyclerActivity::class.java).apply {
                     putExtra("Muscle", Muscle.BICEPS)
@@ -96,36 +95,33 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-        binding.imageViewLeftForearm.setOnClickListener() {
+        binding.imageViewLeftForearm.setOnClickListener {
             val intent = Intent(this, RecyclerActivity::class.java).apply {
                 putExtra("Muscle", Muscle.FOREARMS)
             }
             startActivity(intent)
         }
-        binding.imageViewRightForearm.setOnClickListener() {
+        binding.imageViewRightForearm.setOnClickListener {
             val intent = Intent(this, RecyclerActivity::class.java).apply {
                 putExtra("Muscle", Muscle.FOREARMS)
             }
             startActivity(intent)
         }
-        binding.imageViewLegs.setOnClickListener() {
-            if (rotation == FRONT) {
-                val intent = Intent(this, RecyclerActivity::class.java).apply {
-                    putExtra("Muscle", Muscle.LEGS)
-                }
-                startActivity(intent)
+        binding.imageViewLegs.setOnClickListener {
+            val intent = Intent(this, RecyclerActivity::class.java).apply {
+                putExtra("Muscle", Muscle.LEGS)
             }
-            else {
-                val intent = Intent(this, RecyclerActivity::class.java).apply {
-                    putExtra("Muscle", Muscle.LEGS)
-                }
-                startActivity(intent)
-            }
+            startActivity(intent)
         }
-        binding.imageViewCalves.setOnClickListener() {
+        binding.imageViewCalves.setOnClickListener {
             val intent = Intent(this, RecyclerActivity::class.java).apply {
                 putExtra("Muscle", Muscle.CALVES)
             }
+            startActivity(intent)
+        }
+
+        binding.radioSwitchText.setOnClickListener {
+            val intent = Intent(this, RadioSelectorActivity::class.java)
             startActivity(intent)
         }
     }

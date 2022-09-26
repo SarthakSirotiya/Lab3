@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioSelectorActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/choose_group"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <RadioButton
+            android:id="@+id/radio_traps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/traps" />
+
+        <RadioButton
+            android:id="@+id/radio_chest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chest" />
+
+        <RadioButton
+            android:id="@+id/radio_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back" />
+
+        <RadioButton
+            android:id="@+id/radio_delts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deltoids" />
+
+        <RadioButton
+            android:id="@+id/radio_biceps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biceps" />
+
+        <RadioButton
+            android:id="@+id/radio_triceps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/triceps" />
+
+        <RadioButton
+            android:id="@+id/radio_forearms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forearms" />
+
+        <RadioButton
+            android:id="@+id/radio_abs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abs" />
+
+        <RadioButton
+            android:id="@+id/radio_legs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legs" />
+
+        <RadioButton
+            android:id="@+id/radio_calves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calves" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+</androidx.constraintlayout.widget.ConstraintLayout>

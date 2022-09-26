@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Lab3</string>
     <string name="rotate">Rotate</string>
+    <string name="choose_group">Choose a muscle group</string>
+    <string name="traps">Traps</string>
+    <string name="chest">Chest</string>
+    <string name="back">Back</string>
+    <string name="deltoids">Deltoids</string>
+    <string name="biceps">Biceps</string>
+    <string name="triceps">Triceps</string>
+    <string name="forearms">Forearms</string>
+    <string name="abs">Abs</string>
+    <string name="legs">Legs</string>
+    <string name="calves">Calves</string>
+    <string name="go">Go</string>
+    <string name="radio_select">Select using radio buttons instead?\nClick here!</string>
 </resources>
