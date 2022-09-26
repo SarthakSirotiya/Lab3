@@ -1,22 +1,23 @@
 package com.example.lab3
 
-import androidx.appcompat.app.AppCompatActivity
-import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
-import com.example.lab3.model.Muscle
-import com.example.lab3.RecyclerActivity as RecyclerActivity1
+import androidx.appcompat.app.AppCompatActivity
 import com.example.lab3.adapter.ExerciseCardAdapter
+import com.example.lab3.databinding.ActivityRecyclerBinding
 
 class RecyclerActivity : AppCompatActivity() {
-
+    private lateinit var binding: ActivityRecyclerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recycler)
-
-        val textView = findViewById<TextView>(R.id.textView_1)
-        textView.text = intent.getSerializableExtra("Muscle").toString()
+        binding = ActivityRecyclerBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        binding.recyclerView.adapter = ExerciseCardAdapter(applicationContext)
+
+        binding.recyclerView.setHasFixedSize(true)
+
+        binding.textView1.text = intent.getSerializableExtra("Muscle").toString()
     }
 }

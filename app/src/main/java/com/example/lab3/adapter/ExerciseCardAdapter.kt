@@ -16,8 +16,7 @@ import com.example.lab3.data.DataSource
  * from the appropriate data source
  */
 class ExerciseCardAdapter(
-    private val context: Context?,
-    private val layout: Int
+    private val context: Context?
 ): RecyclerView.Adapter<ExerciseCardAdapter.DogCardViewHolder>() {
 
     //Initialize the data using the List found in data/DataSource TODO
