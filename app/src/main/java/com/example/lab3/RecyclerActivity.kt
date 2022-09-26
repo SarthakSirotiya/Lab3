@@ -1,15 +1,11 @@
 package com.example.lab3
 
 import android.os.Bundle
-import android.provider.ContactsContract
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.lab3.RecyclerActivity as RecyclerActivity1
 import com.example.lab3.adapter.ExerciseCardAdapter
-import com.example.lab3.databinding.ActivityRecyclerBinding
-import com.example.lab3.model.Exercise
-import com.example.lab3.model.Muscle
 import com.example.lab3.data.DataSource
+import com.example.lab3.databinding.ActivityRecyclerBinding
+import com.example.lab3.model.Muscle
 import com.example.lab3.model.Muscle_Exercises
 
 class RecyclerActivity : AppCompatActivity() {
@@ -36,7 +32,6 @@ class RecyclerActivity : AppCompatActivity() {
     }
 
     fun determine_exercises(my_muscle: Muscle): Muscle_Exercises {
-
 
         var my_list = when (my_muscle) {
             Muscle.TRAPS -> DataSource.trap_exercises

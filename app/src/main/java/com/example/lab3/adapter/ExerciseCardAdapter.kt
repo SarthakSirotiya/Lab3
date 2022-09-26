@@ -10,21 +10,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.lab3.R
 import com.example.lab3.model.Muscle_Exercises
 
-/** TODO change this
- * Adapter to inflate the appropriate list item layout and populate the view with information
- * from the appropriate data source
+/**
+ * Get the data adapter
  */
 class ExerciseCardAdapter(
     private val context: Context?,
     private val my_excercises: Muscle_Exercises
 ): RecyclerView.Adapter<ExerciseCardAdapter.ExerciseCardViewHolder>() {
 
-    //Initialize the data using the List found in data/DataSource TODO
+    //Initialize the data using the List found in data/DataSource
     val type = my_excercises.my_muscle
     val exercises = my_excercises.exercises
 
     /**
-     * Initialize view elements TODO
+     * Initialize view elements
      */
     class ExerciseCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
         var exercise_gif_id = view?.findViewById<pl.droidsonroids.gif.GifImageView>(R.id.exercise_gif)
@@ -39,13 +38,12 @@ class ExerciseCardAdapter(
         return ExerciseCardViewHolder(layout_view)
     }
 
-    override fun getItemCount(): Int =  exercises.size //Return the size of the dataset TODO
+    override fun getItemCount(): Int =  exercises.size //Return the size of the dataset
 
     override fun onBindViewHolder(holder: ExerciseCardViewHolder, position: Int) {
         //Get the resources from context
         val resources = context?.resources
 
-        //For the current tree, apply to the holder the 4 tree variables TODO
         exercises[position].apply {
             holder.apply {
                 exercise_gif_id?.setImageResource(gifResourceId)
