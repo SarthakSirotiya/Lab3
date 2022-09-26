@@ -1,10 +1,9 @@
 package com.example.lab3
 
-import androidx.appcompat.app.AppCompatActivity
-import android.content.Intent
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.lab3.RecyclerActivity as RecyclerActivity1
 import com.example.lab3.adapter.ExerciseCardAdapter
 import com.example.lab3.databinding.ActivityRecyclerBinding
@@ -14,7 +13,6 @@ import com.example.lab3.data.DataSource
 import com.example.lab3.model.Muscle_Exercises
 
 class RecyclerActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityRecyclerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +20,7 @@ class RecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRecyclerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         binding.recyclerView.adapter = ExerciseCardAdapter(
             applicationContext,
