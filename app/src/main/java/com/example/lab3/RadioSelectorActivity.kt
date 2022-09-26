@@ -14,6 +14,7 @@ class RadioSelectorActivity : AppCompatActivity() {
         binding = ActivityRadioSelectorBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        setTitle("Select a muscle group!")
 
         binding.buttonGo.setOnClickListener {
             val intent = Intent(this, RecyclerActivity::class.java)
