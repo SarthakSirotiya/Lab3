@@ -16,7 +16,7 @@ class RecyclerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRecyclerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        setTitle("Perform carefully!")
         super.onCreate(savedInstanceState)
         binding = ActivityRecyclerBinding.inflate(layoutInflater)
         setContentView(binding.root)
